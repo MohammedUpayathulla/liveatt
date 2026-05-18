@@ -1,0 +1,10 @@
+2026/05/18 10:33:09 INF MediaMTX v1.18.1, windows, amd64
+2026/05/18 10:33:09 INF configuration loaded from F:\SiteLiveFaceDetection\Testing live att\mediamtx.yml
+2026/05/18 10:33:09 INF [path cam_01] [RTSP source] started
+2026/05/18 10:33:09 INF [RTSP] listener opened on :8554 (TCP/RTSP), :8000 (UDP/RTP), :8001 (UDP/RTCP)
+2026/05/18 10:33:09 INF [RTMP] listener opened on :1935 (TCP/RTMP)
+2026/05/18 10:33:09 INF [HLS] listener opened on :8888 (TCP/HTTP)
+2026/05/18 10:33:09 INF [WebRTC] listener opened on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/05/18 10:33:09 INF [SRT] listener opened on :8890 (UDP)
+2026/05/18 10:33:09 INF [API] listener opened on :1984 (TCP/HTTP)
+2026/05/18 10:33:09 INF [path cam_01] stream is available and online, 2 tracks (H264, G711)

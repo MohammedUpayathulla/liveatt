@@ -1,0 +1,515 @@
+/* Global app styles — Tailwind handles most styling */
+
+/* ── Universal font baseline ── */
+*, *::before, *::after {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Preserve Devanagari where explicitly set */
+[style*="Noto Sans Devanagari"] {
+  font-family: 'Noto Sans Devanagari', 'Inter', sans-serif !important;
+}
+
+/* ── Type scale tokens ── */
+:root {
+  --text-2xs : 7px;
+  --text-xs  : 9px;
+  --text-sm  : 11px;
+  --text-base: 13px;
+  --text-md  : 15px;
+  --text-lg  : 18px;
+  --text-xl  : 22px;
+  --text-2xl : 28px;
+  --text-3xl : 36px;
+
+  --fw-normal  : 400;
+  --fw-medium  : 500;
+  --fw-semibold: 600;
+  --fw-bold    : 700;
+  --fw-extrabold: 800;
+  --fw-black   : 900;
+}
+
+/* Thin webkit scrollbar for detection log */
+.detection-log-scroll::-webkit-scrollbar { width: 3px; }
+.detection-log-scroll::-webkit-scrollbar-track { background: transparent; }
+.detection-log-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+.detection-log-scroll::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+#root {
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+/* Ensure modals sit above everything */
+.modal-overlay {
+  z-index: 1000;
+}
+
+/* Attendance toast animations */
+@keyframes slideInRight {
+  from { transform: translateX(110%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes shrink {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+
+/* Live attendance — placeholder card animations */
+@keyframes breathe {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(1.05); }
+}
+
+@keyframes radarPulse {
+  0%   { transform: scale(0.4); opacity: 0.6; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+@keyframes cardFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 10-second countdown bar for detection cards */
+@keyframes shrink10s {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+
+/* ── Scan-Flow animation (Live Attendance empty state) ─────────────────────────
+   6-second loop: Camera → Face Scan → Verify → Marked
+   Percentages based on 6 s total:
+     Step 1 (camera)   : 0 %–25 %   (0–1.5 s)
+     Connector 1 dot   : 17%–42%   (1–2.5 s)
+     Step 2 (face)     : 25%–50%   (1.5–3 s)
+     Connector 2 dot   : 42%–67%   (2.5–4 s)
+     Step 3 (database) : 50%–75%   (3–4.5 s)
+     Connector 3 dot   : 67%–92%   (4–5.5 s)
+     Step 4 (shield)   : 75%–100%  (4.5–6 s)
+──────────────────────────────────────────────────────────────────────────────── */
+
+/* Step glow-in / glow-out per step — individual named keyframes share timing offsets */
+@keyframes sfStep1 {
+  0%          { opacity:.3; box-shadow: none; border-color: transparent; }
+  2%          { opacity:1;  box-shadow: 0 0 0 1px rgba(59,130,246,.35), 0 0 18px rgba(59,130,246,.2); border-color: rgba(59,130,246,.4); }
+  22%         { opacity:1;  box-shadow: 0 0 0 1px rgba(59,130,246,.2), 0 0 10px rgba(59,130,246,.1); }
+  27%         { opacity:.3; box-shadow: none; border-color: transparent; }
+  100%        { opacity:.3; box-shadow: none; border-color: transparent; }
+}
+@keyframes sfStep2 {
+  0%,25%      { opacity:.3; box-shadow: none; border-color: transparent; }
+  27%         { opacity:1;  box-shadow: 0 0 0 1px rgba(6,182,212,.35),  0 0 18px rgba(6,182,212,.2);  border-color: rgba(6,182,212,.4); }
+  47%         { opacity:1;  box-shadow: 0 0 0 1px rgba(6,182,212,.2),   0 0 10px rgba(6,182,212,.1); }
+  52%         { opacity:.3; box-shadow: none; border-color: transparent; }
+  100%        { opacity:.3; box-shadow: none; border-color: transparent; }
+}
+@keyframes sfStep3 {
+  0%,50%      { opacity:.3; box-shadow: none; border-color: transparent; }
+  52%         { opacity:1;  box-shadow: 0 0 0 1px rgba(139,92,246,.35), 0 0 18px rgba(139,92,246,.2); border-color: rgba(139,92,246,.4); }
+  72%         { opacity:1;  box-shadow: 0 0 0 1px rgba(139,92,246,.2),  0 0 10px rgba(139,92,246,.1); }
+  77%         { opacity:.3; box-shadow: none; border-color: transparent; }
+  100%        { opacity:.3; box-shadow: none; border-color: transparent; }
+}
+@keyframes sfStep4 {
+  0%,75%      { opacity:.3; box-shadow: none; border-color: transparent; }
+  77%         { opacity:1;  box-shadow: 0 0 0 1px rgba(16,185,129,.35), 0 0 18px rgba(16,185,129,.2); border-color: rgba(16,185,129,.4); }
+  97%         { opacity:1;  box-shadow: 0 0 0 1px rgba(16,185,129,.2),  0 0 10px rgba(16,185,129,.1); }
+  100%        { opacity:.3; box-shadow: none; border-color: transparent; }
+}
+
+/* Camera pulsing capture ring */
+@keyframes sfCapture {
+  0%,3%       { transform: scale(1); opacity:0; }
+  6%          { opacity:1; transform: scale(1); }
+  24%         { transform: scale(1.6); opacity:0; }
+  100%        { transform: scale(1); opacity:0; }
+}
+
+/* Connector traveling dots */
+@keyframes sfConn1 {
+  0%,17%      { transform: translateY(0);    opacity:0; }
+  20%         { transform: translateY(0);    opacity:1; }
+  40%         { transform: translateY(28px); opacity:0; }
+  100%        { transform: translateY(0);    opacity:0; }
+}
+@keyframes sfConn2 {
+  0%,42%      { transform: translateY(0);    opacity:0; }
+  45%         { transform: translateY(0);    opacity:1; }
+  65%         { transform: translateY(28px); opacity:0; }
+  100%        { transform: translateY(0);    opacity:0; }
+}
+@keyframes sfConn3 {
+  0%,67%      { transform: translateY(0);    opacity:0; }
+  70%         { transform: translateY(0);    opacity:1; }
+  90%         { transform: translateY(28px); opacity:0; }
+  100%        { transform: translateY(0);    opacity:0; }
+}
+
+/* Face scan line sweep (clipped inside face ellipse) */
+@keyframes sfScanLine {
+  0%,25%      { transform: translateY(-18px); opacity:0; }
+  28%         { transform: translateY(-18px); opacity:1; }
+  47%         { transform: translateY(18px);  opacity:.8; }
+  50%,100%    { transform: translateY(-18px); opacity:0; }
+}
+
+/* Landmark dot staggered appear */
+@keyframes sfDot1 { 0%,26% { opacity:.1; } 30%,48% { opacity:1; } 52%,100% { opacity:.1; } }
+@keyframes sfDot2 { 0%,28% { opacity:.1; } 32%,48% { opacity:1; } 52%,100% { opacity:.1; } }
+@keyframes sfDot3 { 0%,30% { opacity:.1; } 34%,48% { opacity:1; } 52%,100% { opacity:.1; } }
+@keyframes sfDot4 { 0%,32% { opacity:.1; } 36%,48% { opacity:1; } 52%,100% { opacity:.1; } }
+@keyframes sfDot5 { 0%,34% { opacity:.1; } 38%,48% { opacity:1; } 52%,100% { opacity:.1; } }
+@keyframes sfDot6 { 0%,36% { opacity:.1; } 40%,48% { opacity:1; } 52%,100% { opacity:.1; } }
+
+/* DB match arrow pulse */
+@keyframes sfMatch {
+  0%,50%      { opacity:0.15; stroke-dashoffset:12; }
+  55%         { opacity:1;    stroke-dashoffset:0; }
+  73%         { opacity:1;    stroke-dashoffset:0; }
+  77%,100%    { opacity:0.15; stroke-dashoffset:12; }
+}
+
+/* Checkmark draw-in */
+@keyframes sfCheck {
+  0%,76%      { stroke-dashoffset:36; opacity:.1; }
+  80%         { stroke-dashoffset:36; opacity:1; }
+  94%         { stroke-dashoffset:0; }
+  100%        { stroke-dashoffset:0; }
+}
+
+/* Shield success glow */
+@keyframes sfShieldGlow {
+  0%,76%      { filter: none; }
+  82%         { filter: drop-shadow(0 0 8px rgba(16,185,129,.8)) drop-shadow(0 0 16px rgba(16,185,129,.4)); }
+  97%         { filter: drop-shadow(0 0 4px rgba(16,185,129,.4)); }
+  100%        { filter: none; }
+}
+
+/* "Attendance Marked" label colour shift */
+@keyframes sfLabel {
+  0%,76%      { color: rgb(100,116,139); }
+  80%,100%    { color: rgb(16,185,129); }
+}
+
+/* ── Punch IN / OUT card animations ─────────────────────────────────────────── */
+
+/* Card entrance */
+@keyframes punchCardIn {
+  from { opacity: 0; transform: translateY(32px) scale(0.88); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+/* Thumbs up bounce for CHECK IN */
+@keyframes thumbsUp {
+  0%   { opacity:0; transform: scale(0.3) translateY(20px) rotate(-20deg); }
+  50%  { opacity:1; transform: scale(1.35) translateY(-10px) rotate(10deg); }
+  70%  { transform: scale(0.9) translateY(4px) rotate(-4deg); }
+  85%  { transform: scale(1.08) translateY(-3px) rotate(2deg); }
+  100% { transform: scale(1) translateY(0) rotate(0deg); }
+}
+
+/* Continuous gentle bob after thumbs up */
+@keyframes thumbsBob {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  40%     { transform: translateY(-8px) rotate(6deg); }
+  60%     { transform: translateY(-6px) rotate(3deg); }
+}
+
+/* Wave hand for CHECK OUT */
+@keyframes waveHand {
+  0%   { opacity:0; transform: scale(0.3) rotate(20deg); }
+  40%  { opacity:1; transform: scale(1.2) rotate(-20deg); }
+  55%  { transform: scale(1.1) rotate(15deg); }
+  70%  { transform: scale(1.05) rotate(-12deg); }
+  82%  { transform: scale(1.02) rotate(8deg); }
+  92%  { transform: scale(1) rotate(-5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Continuous wave after entrance */
+@keyframes waveContinue {
+  0%,100% { transform: rotate(0deg); }
+  20%     { transform: rotate(-18deg); }
+  40%     { transform: rotate(14deg); }
+  60%     { transform: rotate(-10deg); }
+  80%     { transform: rotate(6deg); }
+}
+
+/* Confetti dots for check-in */
+@keyframes confetti0 { to { transform: translate(-30px,-60px) rotate(360deg); opacity:0; } }
+@keyframes confetti1 { to { transform: translate(30px,-60px)  rotate(-360deg); opacity:0; } }
+@keyframes confetti2 { to { transform: translate(-50px,-30px) rotate(270deg); opacity:0; } }
+@keyframes confetti3 { to { transform: translate(50px,-30px)  rotate(-270deg); opacity:0; } }
+@keyframes confetti4 { to { transform: translate(-20px,-70px) rotate(180deg); opacity:0; } }
+@keyframes confetti5 { to { transform: translate(20px,-70px)  rotate(-180deg); opacity:0; } }
+
+/* SVG stroke draws itself */
+@keyframes strokeDraw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Circle scales in */
+@keyframes circleScale {
+  0%   { opacity: 0; transform: scale(0.4); }
+  60%  { opacity: 1; transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* Checkmark tick bounces */
+@keyframes checkBounce {
+  0%   { opacity: 0; transform: scale(0.5); }
+  55%  { opacity: 1; transform: scale(1.18); }
+  80%  { transform: scale(0.94); }
+  100% { transform: scale(1); }
+}
+
+/* X icon shake */
+@keyframes xShake {
+  0%   { opacity: 0; transform: scale(0.5) rotate(20deg); }
+  50%  { opacity: 1; transform: scale(1.15) rotate(-8deg); }
+  70%  { transform: scale(0.96) rotate(5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Particles fly outward (8 directions) */
+@keyframes p0 { to { transform: translate(0,   -52px) scale(0); opacity: 0; } }
+@keyframes p1 { to { transform: translate(37px,-37px) scale(0); opacity: 0; } }
+@keyframes p2 { to { transform: translate(52px,  0px) scale(0); opacity: 0; } }
+@keyframes p3 { to { transform: translate(37px, 37px) scale(0); opacity: 0; } }
+@keyframes p4 { to { transform: translate(0,    52px) scale(0); opacity: 0; } }
+@keyframes p5 { to { transform: translate(-37px,37px) scale(0); opacity: 0; } }
+@keyframes p6 { to { transform: translate(-52px, 0px) scale(0); opacity: 0; } }
+@keyframes p7 { to { transform: translate(-37px,-37px)scale(0); opacity: 0; } }
+
+/* Ripple rings expanding outward */
+@keyframes punchRipple {
+  0%   { transform: scale(0.5); opacity: 0.6; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Banner label slide in */
+@keyframes punchLabelIn {
+  from { opacity: 0; transform: translateY(-12px) scale(0.9); }
+  to   { opacity: 1; transform: translateY(0)     scale(1); }
+}
+
+/* Continuous glow breathe */
+@keyframes punchBreath {
+  0%, 100% { box-shadow: 0 0 12px 2px var(--pc); }
+  50%       { box-shadow: 0 0 28px 8px var(--pc); }
+}
+
+/* ── FullScreenDetection — Weather & Ad animations ─────────────────────────── */
+
+/* Weather emoji gentle float */
+@keyframes wFloat {
+  0%, 100% { transform: translateY(0px) rotate(-3deg); }
+  50%       { transform: translateY(-10px) rotate(3deg); }
+}
+
+/* Weather background orb drift */
+@keyframes wBlob {
+  0%, 100% { transform: scale(1) translate(0, 0); }
+  33%       { transform: scale(1.2) translate(12px, -8px); }
+  66%       { transform: scale(0.9) translate(-8px, 10px); }
+}
+
+/* Ad card entrance — staggered slide-up */
+@keyframes adCardIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+/* Product card gentle hover float (continuous) */
+@keyframes cardFloat {
+  0%, 100% { transform: translateY(0px)   scale(1); }
+  50%       { transform: translateY(-10px) scale(1.02); }
+}
+
+/* ── Premium Ad Panel animations ─────────────────────────────────────── */
+
+/* Circle-burst reveal — new product bursts in from centre */
+@keyframes adReveal {
+  from { clip-path: circle(0%   at 50% 45%); opacity: 0.6; }
+  to   { clip-path: circle(150% at 50% 45%); opacity: 1; }
+}
+
+/* Product image: slam down from above with bounce */
+@keyframes adImgSlam {
+  0%   { opacity: 0; transform: scale(0.45) translateY(-60px) rotate(-6deg); }
+  55%  { opacity: 1; transform: scale(1.10) translateY(10px)  rotate(1.5deg); }
+  75%  { transform: scale(0.96) translateY(-4px) rotate(-0.5deg); }
+  100% { transform: scale(1)    translateY(0)    rotate(0deg); }
+}
+
+/* Product name: slide in from left */
+@keyframes adNameIn {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Category tag: fade + rise */
+@keyframes adTagIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Bottom bar wipe */
+@keyframes adBarWipe {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}
+
+/* Continuous gentle float for product image */
+@keyframes adFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-9px); }
+}
+
+/* Ambient glow pulse behind image */
+@keyframes ambientPulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%       { opacity: 0.80; transform: scale(1.18); }
+}
+
+/* Shine sweep across image */
+@keyframes spotSweep {
+  0%   { left: -80%; opacity: 0; }
+  10%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { left: 160%; opacity: 0; }
+}
+
+/* Counter number flip */
+@keyframes numFlip {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Ad card entrance (used elsewhere) */
+@keyframes adCardIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+/* Product card gentle float (used in grid views) */
+@keyframes cardFloat {
+  0%, 100% { transform: translateY(0px)   scale(1); }
+  50%       { transform: translateY(-10px) scale(1.02); }
+}
+
+/* Ticker text scroll */
+@keyframes tickerScroll {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Weather floating particles */
+@keyframes wParticle {
+  0%, 100% { transform: translateY(0)    scale(1);   opacity: 0.25; }
+  50%       { transform: translateY(-18px) scale(1.3); opacity: 0.65; }
+}
+
+/* Detection log — new row slide-in from right */
+@keyframes rowSlideIn {
+  from { transform: translateX(20px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+/* Hero quote emoji bounce */
+@keyframes bounceEmoji {
+  0%, 100% { transform: translateY(0)   scale(1);   }
+  30%       { transform: translateY(-8px) scale(1.25); }
+  60%       { transform: translateY(-3px) scale(1.1);  }
+}
+
+/* Hero quote bubble slide-up entrance */
+@keyframes quoteFadeUp {
+  from { opacity: 0; transform: translateY(14px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+/* Hero name pop-in */
+@keyframes namePop {
+  0%   { opacity: 0; transform: scale(0.7); }
+  70%  { transform: scale(1.08); }
+  100% { opacity: 1; transform: scale(1);   }
+}
+
+/* Hero avatar drop-in */
+@keyframes avatarDrop {
+  0%   { opacity: 0; transform: translateY(-20px) scale(0.8); }
+  65%  { transform: translateY(4px) scale(1.05); }
+  100% { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+/* ══ Full-page animated background — top↔bottom + left↔right flow ═══════════ */
+@keyframes bgFlow {
+  0%   { background-position: 0%   0%;   }
+  12%  { background-position: 100% 0%;   }
+  25%  { background-position: 100% 50%;  }
+  37%  { background-position: 100% 100%; }
+  50%  { background-position: 50%  100%; }
+  62%  { background-position: 0%   100%; }
+  75%  { background-position: 0%   50%;  }
+  87%  { background-position: 50%  0%;   }
+  100% { background-position: 0%   0%;   }
+}
+
+.bg-animated {
+  background: linear-gradient(
+    135deg,
+    #fce7f3 0%,
+    #ede9fe 14%,
+    #dbeafe 28%,
+    #d1fae5 42%,
+    #fef9c3 56%,
+    #ffedd5 70%,
+    #fce7f3 84%,
+    #ede9fe 100%
+  );
+  background-size: 500% 500%;
+  animation: bgFlow 12s ease-in-out infinite;
+}
+
+/* ══ Floating card shadow animations ════════════════════════════════════════ */
+@keyframes cardFloatA {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(139,92,246,0.18), 0 2px 8px rgba(59,130,246,0.12);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 20px 56px rgba(139,92,246,0.32), 0 8px 24px rgba(59,130,246,0.22);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes cardFloatB {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(16,185,129,0.18), 0 2px 8px rgba(14,165,233,0.12);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 20px 56px rgba(16,185,129,0.32), 0 8px 24px rgba(14,165,233,0.22);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes cardFloatC {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(249,115,22,0.15), 0 2px 8px rgba(236,72,153,0.12);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 20px 56px rgba(249,115,22,0.28), 0 8px 24px rgba(236,72,153,0.22);
+    transform: translateY(-4px);
+  }
+}
+
+.card-float-a { animation: cardFloatA 5s   ease-in-out          infinite; }
+.card-float-b { animation: cardFloatB 5s   ease-in-out 1.6s     infinite; }
+.card-float-c { animation: cardFloatC 5s   ease-in-out 3.2s     infinite; }

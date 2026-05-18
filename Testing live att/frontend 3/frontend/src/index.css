@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Scrollbar — dark mode (default) ───────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: #0f172a; }
+::-webkit-scrollbar-thumb  { background: #334155; border-radius: 1px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+* { scrollbar-width: thin; scrollbar-color: #334155 #0f172a; }
+
+/* ── Scrollbar — light mode ─────────────────────────────────────────────────── */
+html:not(.dark) ::-webkit-scrollbar-track  { background: #f1f5f9; }
+html:not(.dark) ::-webkit-scrollbar-thumb  { background: #94a3b8; }
+html:not(.dark) ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+html:not(.dark) * { scrollbar-color: #94a3b8 #f1f5f9; }
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Light mode body ────────────────────────────────────────────────────────── */
+html:not(.dark) body { background-color: #f1f5f9; color: #0f172a; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   LIGHT MODE OVERRIDES
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Base Backgrounds ───────────────────────────────────────────────────────── */
+html:not(.dark) .bg-slate-900  { background-color: #f1f5f9 !important; }
+html:not(.dark) .bg-slate-800  { background-color: #ffffff !important; }
+html:not(.dark) .bg-slate-700  { background-color: #e2e8f0 !important; }
+html:not(.dark) .bg-slate-600  { background-color: #cbd5e1 !important; }
+
+/* ── Slate opacity variants ─────────────────────────────────────────────────── */
+html:not(.dark) .bg-slate-900\/60 { background-color: rgba(241,245,249,.80) !important; }
+html:not(.dark) .bg-slate-900\/50 { background-color: rgba(241,245,249,.75) !important; }
+html:not(.dark) .bg-slate-900\/40 { background-color: rgba(241,245,249,.70) !important; }
+html:not(.dark) .bg-slate-900\/30 { background-color: rgba(241,245,249,.60) !important; }
+html:not(.dark) .bg-slate-800\/70 { background-color: rgba(255,255,255,.92) !important; }
+html:not(.dark) .bg-slate-800\/60 { background-color: rgba(255,255,255,.90) !important; }
+html:not(.dark) .bg-slate-800\/50 { background-color: rgba(255,255,255,.85) !important; }
+html:not(.dark) .bg-slate-800\/40 { background-color: rgba(255,255,255,.75) !important; }
+html:not(.dark) .bg-slate-800\/20 { background-color: rgba(248,250,252,.60) !important; }
+html:not(.dark) .bg-slate-700\/80 { background-color: rgba(226,232,240,.95) !important; }
+html:not(.dark) .bg-slate-700\/60 { background-color: rgba(226,232,240,.90) !important; }
+html:not(.dark) .bg-slate-700\/50 { background-color: rgba(226,232,240,.85) !important; }
+html:not(.dark) .bg-slate-700\/40 { background-color: rgba(226,232,240,.70) !important; }
+html:not(.dark) .bg-slate-700\/30 { background-color: rgba(226,232,240,.55) !important; }
+html:not(.dark) .bg-slate-700\/20 { background-color: rgba(226,232,240,.40) !important; }
+
+/* ── Status / accent backgrounds ────────────────────────────────────────────── */
+/* Green */
+html:not(.dark) .bg-green-900\/50 { background-color: #bbf7d0 !important; }
+html:not(.dark) .bg-green-900\/40 { background-color: #dcfce7 !important; }
+html:not(.dark) .bg-green-900\/30 { background-color: #f0fdf4 !important; }
+html:not(.dark) .bg-green-900\/20 { background-color: #f0fdf4 !important; }
+html:not(.dark) .bg-green-900\/10 { background-color: #f7fef9 !important; }
+html:not(.dark) .bg-green-700\/40 { background-color: #bbf7d0 !important; }
+html:not(.dark) .bg-green-500\/20 { background-color: #dcfce7 !important; }
+html:not(.dark) .bg-green-500\/10 { background-color: #f0fdf4 !important; }
+
+/* Red */
+html:not(.dark) .bg-red-900\/40  { background-color: #fee2e2 !important; }
+html:not(.dark) .bg-red-900\/30  { background-color: #fee2e2 !important; }
+html:not(.dark) .bg-red-900\/20  { background-color: #fef2f2 !important; }
+html:not(.dark) .bg-red-900\/10  { background-color: #fff5f5 !important; }
+html:not(.dark) .bg-red-700\/40  { background-color: #fecaca !important; }
+html:not(.dark) .bg-red-500\/20  { background-color: #fee2e2 !important; }
+html:not(.dark) .bg-red-500\/10  { background-color: #fef2f2 !important; }
+
+/* Blue */
+html:not(.dark) .bg-blue-900\/40  { background-color: #dbeafe !important; }
+html:not(.dark) .bg-blue-900\/30  { background-color: #eff6ff !important; }
+html:not(.dark) .bg-blue-900\/20  { background-color: #eff6ff !important; }
+html:not(.dark) .bg-blue-700\/50  { background-color: #bfdbfe !important; }
+html:not(.dark) .bg-blue-700\/40  { background-color: #dbeafe !important; }
+html:not(.dark) .bg-blue-700\/30  { background-color: #eff6ff !important; }
+html:not(.dark) .bg-blue-600\/20  { background-color: #eff6ff !important; }
+html:not(.dark) .bg-blue-500\/10  { background-color: #eff6ff !important; }
+
+/* Purple */
+html:not(.dark) .bg-purple-900\/40 { background-color: #f3e8ff !important; }
+html:not(.dark) .bg-purple-700\/40 { background-color: #e9d5ff !important; }
+html:not(.dark) .bg-purple-500\/10 { background-color: #faf5ff !important; }
+
+/* Violet */
+html:not(.dark) .bg-violet-900\/40 { background-color: #ede9fe !important; }
+html:not(.dark) .bg-violet-900\/30 { background-color: #f5f3ff !important; }
+
+/* Indigo */
+html:not(.dark) .bg-indigo-900\/40 { background-color: #e0e7ff !important; }
+html:not(.dark) .bg-indigo-900\/30 { background-color: #eef2ff !important; }
+html:not(.dark) .bg-indigo-700\/50 { background-color: #c7d2fe !important; }
+
+/* Orange */
+html:not(.dark) .bg-orange-900\/40 { background-color: #ffedd5 !important; }
+html:not(.dark) .bg-orange-900\/30 { background-color: #fff7ed !important; }
+
+/* Yellow */
+html:not(.dark) .bg-yellow-900\/40 { background-color: #fef9c3 !important; }
+html:not(.dark) .bg-yellow-900\/20 { background-color: #fefce8 !important; }
+html:not(.dark) .bg-yellow-500\/20 { background-color: #fef9c3 !important; }
+html:not(.dark) .bg-yellow-500\/10 { background-color: #fefce8 !important; }
+
+/* ── Text ───────────────────────────────────────────────────────────────────── */
+html:not(.dark) .text-white    { color: #0f172a !important; }
+html:not(.dark) .text-slate-100 { color: #1e293b !important; }
+html:not(.dark) .text-slate-200 { color: #1e293b !important; }
+html:not(.dark) .text-slate-300 { color: #334155 !important; }
+html:not(.dark) .text-slate-400 { color: #475569 !important; }
+html:not(.dark) .text-slate-500 { color: #64748b !important; }
+html:not(.dark) .text-slate-600 { color: #475569 !important; }
+
+/* Status / accent text */
+html:not(.dark) .text-green-300  { color: #15803d !important; }
+html:not(.dark) .text-green-400  { color: #16a34a !important; }
+html:not(.dark) .text-red-300    { color: #b91c1c !important; }
+html:not(.dark) .text-red-400    { color: #dc2626 !important; }
+html:not(.dark) .text-blue-200   { color: #1e40af !important; }
+html:not(.dark) .text-blue-300   { color: #1d4ed8 !important; }
+html:not(.dark) .text-blue-400   { color: #2563eb !important; }
+html:not(.dark) .text-violet-300 { color: #7c3aed !important; }
+html:not(.dark) .text-violet-400 { color: #7c3aed !important; }
+html:not(.dark) .text-indigo-300 { color: #4338ca !important; }
+html:not(.dark) .text-indigo-200 { color: #4338ca !important; }
+html:not(.dark) .text-orange-300 { color: #c2410c !important; }
+html:not(.dark) .text-orange-400 { color: #ea580c !important; }
+html:not(.dark) .text-yellow-300 { color: #a16207 !important; }
+html:not(.dark) .text-yellow-400 { color: #b45309 !important; }
+html:not(.dark) .text-purple-300 { color: #7e22ce !important; }
+html:not(.dark) .text-purple-400 { color: #9333ea !important; }
+
+/* ── Borders ─────────────────────────────────────────────────────────────────── */
+html:not(.dark) .border-slate-800    { border-color: #e2e8f0 !important; }
+html:not(.dark) .border-slate-700    { border-color: #cbd5e1 !important; }
+html:not(.dark) .border-slate-600    { border-color: #94a3b8 !important; }
+
+html:not(.dark) .border-slate-700\/60 { border-color: rgba(148,163,184,.70) !important; }
+html:not(.dark) .border-slate-700\/50 { border-color: rgba(148,163,184,.65) !important; }
+html:not(.dark) .border-slate-700\/40 { border-color: rgba(148,163,184,.55) !important; }
+html:not(.dark) .border-slate-700\/30 { border-color: rgba(148,163,184,.45) !important; }
+html:not(.dark) .border-slate-600\/50 { border-color: rgba(148,163,184,.65) !important; }
+html:not(.dark) .border-slate-600\/40 { border-color: rgba(148,163,184,.55) !important; }
+
+/* Status badge borders */
+html:not(.dark) .border-green-700\/60 { border-color: #86efac !important; }
+html:not(.dark) .border-green-700\/50 { border-color: #86efac !important; }
+html:not(.dark) .border-green-700\/40 { border-color: #86efac !important; }
+html:not(.dark) .border-green-700\/30 { border-color: #bbf7d0 !important; }
+html:not(.dark) .border-green-600\/50 { border-color: #86efac !important; }
+html:not(.dark) .border-red-700\/50   { border-color: #fca5a5 !important; }
+html:not(.dark) .border-red-700\/40   { border-color: #fca5a5 !important; }
+html:not(.dark) .border-red-700\/30   { border-color: #fecaca !important; }
+html:not(.dark) .border-red-700       { border-color: #fca5a5 !important; }
+html:not(.dark) .border-blue-700\/50  { border-color: #93c5fd !important; }
+html:not(.dark) .border-blue-700\/40  { border-color: #93c5fd !important; }
+html:not(.dark) .border-blue-700\/30  { border-color: #bfdbfe !important; }
+html:not(.dark) .border-blue-600\/60  { border-color: #60a5fa !important; }
+html:not(.dark) .border-blue-500\/20  { border-color: #93c5fd !important; }
+html:not(.dark) .border-blue-500      { border-color: #3b82f6 !important; }
+html:not(.dark) .border-violet-700\/40 { border-color: #c4b5fd !important; }
+html:not(.dark) .border-indigo-700\/40 { border-color: #a5b4fc !important; }
+html:not(.dark) .border-orange-700\/30 { border-color: #fdba74 !important; }
+html:not(.dark) .border-purple-700\/50 { border-color: #d8b4fe !important; }
+html:not(.dark) .border-purple-700\/40 { border-color: #d8b4fe !important; }
+
+/* ── Hover states ────────────────────────────────────────────────────────────── */
+html:not(.dark) .hover\:bg-slate-700:hover     { background-color: #e2e8f0 !important; }
+html:not(.dark) .hover\:bg-slate-600:hover     { background-color: #cbd5e1 !important; }
+html:not(.dark) .hover\:bg-slate-800:hover     { background-color: #f1f5f9 !important; }
+html:not(.dark) .hover\:bg-slate-700\/60:hover { background-color: rgba(226,232,240,.90) !important; }
+html:not(.dark) .hover\:bg-slate-700\/40:hover { background-color: rgba(226,232,240,.70) !important; }
+html:not(.dark) .hover\:bg-slate-700\/30:hover { background-color: rgba(226,232,240,.55) !important; }
+html:not(.dark) .hover\:bg-slate-700\/20:hover { background-color: rgba(226,232,240,.40) !important; }
+html:not(.dark) .hover\:text-white:hover       { color: #0f172a !important; }
+html:not(.dark) .hover\:text-slate-100:hover   { color: #1e293b !important; }
+html:not(.dark) .hover\:text-slate-200:hover   { color: #334155 !important; }
+html:not(.dark) .hover\:text-slate-300:hover   { color: #475569 !important; }
+html:not(.dark) .hover\:border-slate-500:hover { border-color: #94a3b8 !important; }
+html:not(.dark) .hover\:border-slate-600:hover { border-color: #64748b !important; }
+html:not(.dark) .hover\:bg-red-500\/10:hover    { background-color: #fef2f2 !important; }
+html:not(.dark) .hover\:bg-purple-500\/10:hover { background-color: #faf5ff !important; }
+html:not(.dark) .hover\:bg-green-500\/10:hover  { background-color: #f0fdf4 !important; }
+html:not(.dark) .hover\:bg-blue-500\/10:hover   { background-color: #eff6ff !important; }
+html:not(.dark) .hover\:bg-red-900\/10:hover    { background-color: #fff5f5 !important; }
+
+/* ── Divide (table row separators) ──────────────────────────────────────────── */
+html:not(.dark) .divide-slate-700\/50 > * + *  { border-color: rgba(148,163,184,.40) !important; }
+html:not(.dark) .divide-slate-700\/30 > * + *  { border-color: rgba(148,163,184,.30) !important; }
+
+/* ── Ring / focus ─────────────────────────────────────────────────────────────*/
+html:not(.dark) .ring-slate-700 { --tw-ring-color: #cbd5e1 !important; }
+
+/* ── Date/color-scheme for native inputs ─────────────────────────────────────── */
+html:not(.dark) input[type="date"],
+html:not(.dark) input[type="time"],
+html:not(.dark) input[type="number"] { color-scheme: light; }
+
+/* ── Smooth theme transition ─────────────────────────────────────────────────── */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Smooth transitions for interactive elements */
+button, a {
+  transition: all 0.15s ease;
+}
+
+/* Custom focus ring */
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Animation for new attendance events */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromTop 0.3s ease forwards;
+}
+
+/* Green flash animation for camera detection */
+@keyframes greenFlash {
+  0%   { box-shadow: 0 0 0 0 rgba(34,197,94,0); border-color: transparent; }
+  30%  { box-shadow: 0 0 0 6px rgba(34,197,94,0.6); border-color: #22c55e; }
+  100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); border-color: transparent; }
+}
+
+.camera-flash {
+  animation: greenFlash 1s ease forwards;
+}

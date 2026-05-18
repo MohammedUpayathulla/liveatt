@@ -1,0 +1,26 @@
+# MediaMTX v1.18.x Configuration - RTSP to WebRTC/HLS Bridge
+
+api: yes
+apiAddress: :1984
+
+rtsp: yes
+rtspAddress: :8554
+
+rtmp: yes
+rtmpAddress: :1935
+
+hls: yes
+hlsAddress: :8888
+hlsSegmentCount: 3
+hlsSegmentDuration: 1s
+
+webrtc: yes
+webrtcAddress: :8889
+webrtcAdditionalHosts:
+  - 172.16.1.157
+
+paths:
+  cam_01:
+    source: rtsp://admin:Admin%40123@172.16.0.150:554/ch01/1
+    rtspTransport: tcp
+    sourceOnDemand: no

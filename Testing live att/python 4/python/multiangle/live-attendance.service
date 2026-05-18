@@ -1,0 +1,16 @@
+[Unit]
+Description=Live Attendance Face Recognition
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/live-attendance/Python/multiangle
+ExecStart=/usr/bin/python3 /home/pi/live-attendance/Python/multiangle/run.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1320 @@
+
+> attendance-backend@1.0.0 start
+> node server.js
+
+[DB] MySQL connection pool initialised successfully.
+[DB] Migration: daily_attendance table ready.
+[DB] Shift settings seeded.
+[DB] Migration: device_sync_results.job_id is now nullable.
+[DB] Migration: device_sync_jobs table ready.
+[DB] Migration: device_sync_results table ready.
+[DB] Migration: employee_code collation set to utf8mb4_unicode_ci.
+[DB] Migration warning (employee_code unique index): Duplicate key name 'uq_employee_code'
+[DB] Migration: device_sync_history table ready.
+[DB] Migration: unknown_faces table ready.
+[DB] Auto-migrations applied.
+
+╔══════════════════════════════════════════════════════╗
+║       Live Attendance Backend  •  Node.js            ║
+╠══════════════════════════════════════════════════════╣
+║  HTTP  listening on  http://localhost:5005           ║
+║  WS    listening on  ws://localhost:5005             ║
+╚══════════════════════════════════════════════════════╝
+
+[Socket] Client connected: UNu8whPCyaw0_bI6AAAC
+[Socket] Web client joined 'web_clients': UNu8whPCyaw0_bI6AAAC
+[Socket] Web client joined 'web_clients': UNu8whPCyaw0_bI6AAAC
+[Socket] Client connected: y5Mz5Byh-TiXMtFoAAAE
+[Socket] Web client joined 'web_clients': y5Mz5Byh-TiXMtFoAAAE
+[Socket] Web client joined 'web_clients': y5Mz5Byh-TiXMtFoAAAE
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:33:43 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:33:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:34:04 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:34:15 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client disconnected: y5Mz5Byh-TiXMtFoAAAE (transport close)
+[Socket] Client connected: NhQXIHBy9UmDThkFAAAG
+[Socket] Web client joined 'web_clients': NhQXIHBy9UmDThkFAAAG
+[Socket] Web client joined 'web_clients': NhQXIHBy9UmDThkFAAAG
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:34:25 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client disconnected: UNu8whPCyaw0_bI6AAAC (ping timeout)
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:34:36 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:34:46 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:34:57 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client connected: 6ldlBsNMhVj4Rfp1AAAI
+[Socket] Web client joined 'web_clients': 6ldlBsNMhVj4Rfp1AAAI
+[Socket] Web client joined 'web_clients': 6ldlBsNMhVj4Rfp1AAAI
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:35:08 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:35:19 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:35:58 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:36:07 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:36:18 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:36:34 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:36:47 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:37:08 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:37:23 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:37:34 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:37:46 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:37:57 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:38:12 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:38:27 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:38:43 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:38:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:39:05 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:39:18 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:39:32 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:39:42 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:39:52 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:40:02 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:40:12 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:40:22 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:40:32 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:40:42 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:40:52 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:41:02 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:41:12 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:41:22 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:41:32 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:41:42 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:41:52 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:42:02 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:42:13 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:42:23 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:42:33 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:42:43 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client disconnected: NhQXIHBy9UmDThkFAAAG (transport close)
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:42:53 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client connected: PgIBWJK7PkzSypuaAAAK
+[Socket] Web client joined 'web_clients': PgIBWJK7PkzSypuaAAAK
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:43:03 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:43:13 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:43:23 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client disconnected: PgIBWJK7PkzSypuaAAAK (transport close)
+[Socket] Client connected: lu7iG1S_4v6lUJtOAAAM
+[Socket] Web client joined 'web_clients': lu7iG1S_4v6lUJtOAAAM
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:43:33 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:43:43 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:43:53 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:44:03 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:44:13 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:44:23 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:44:33 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:44:43 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client disconnected: lu7iG1S_4v6lUJtOAAAM (transport close)
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:44:53 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+[Socket] Client disconnected: 6ldlBsNMhVj4Rfp1AAAI (transport close)
+[Socket] Client connected: Jw_lww54CuATpZOyAAAO
+[Socket] Web client joined 'web_clients': Jw_lww54CuATpZOyAAAO
+[Socket] Web client joined 'web_clients': Jw_lww54CuATpZOyAAAO
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:45:03 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:45:13 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:45:23 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:45:33 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:45:43 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:45:53 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:46:03 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:46:13 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:46:23 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:46:33 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:46:43 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:46:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:47:04 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:47:14 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:47:24 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:47:34 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:47:44 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:47:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:48:04 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:48:14 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:48:24 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:48:34 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:48:44 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:48:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:49:04 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:49:14 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:49:24 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:49:34 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:49:44 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:49:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:50:04 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:50:14 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:50:24 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:50:34 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:50:44 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:50:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:51:04 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:51:14 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:51:24 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:51:34 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:51:44 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:51:54 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:52:05 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:52:15 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:52:25 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:52:35 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:52:45 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:52:55 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:53:05 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:53:15 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:53:25 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:53:35 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:53:45 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:53:55 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:54:05 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:54:15 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:54:25 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:54:35 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:54:45 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:54:55 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:55:05 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:55:15 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:55:25 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:55:35 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:55:45 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:55:55 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:56:05 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:56:15 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:56:25 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:56:35 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:56:45 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:56:55 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:57:05 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:57:15 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:57:25 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:57:36 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:57:46 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:57:56 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:58:06 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:58:16 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:58:26 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:58:36 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:58:46 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:58:56 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:59:06 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:59:16 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:59:26 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:59:36 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:59:46 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 10:59:56 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:00:06 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:00:16 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:00:26 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:00:36 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:00:46 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:00:56 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:01:06 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:01:16 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:01:26 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online
+─────────────────────────────────────────
+[Health Update] Received from Pi
+  device_id  : CAM_001
+  device_ip  : 172.16.1.157
+  status     : online
+  time       : 18/5/2026, 11:01:37 am
+─────────────────────────────────────────
+[Health Update] ✓ DB updated — device_ip=172.16.1.157 status=online

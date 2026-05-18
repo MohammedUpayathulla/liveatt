@@ -1,0 +1,21 @@
+backend_url: http://172.16.1.157:5005
+camera_mode: in
+device_id: CAM_001
+device_ip: 172.16.1.157
+device_name: Main off
+enabled: true
+punch_cooldown_seconds: 300
+roi: null
+rtsp_url: rtsp://admin:Admin%40123@172.16.0.150:554/ch01/1
+server_port: 5003
+streams:
+  Main off:
+    mode: in
+    roi:
+    - 4
+    - 6
+    - 632
+    - 355
+    rtsp_url: rtsp://admin:Admin%40123@172.16.0.150:554/ch01/1
+    threshold: 0.45
+threshold: 0.45

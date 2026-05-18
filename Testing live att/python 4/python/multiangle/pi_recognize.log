@@ -1,0 +1,451 @@
+[INFO] Script dir    : F:\SiteLiveFaceDetection\Testing live att\python 4\python\multiangle
+[INFO] DB path       : F:\SiteLiveFaceDetection\Testing live att\python 4\python\multiangle\face.sqlite
+[INFO] Config path   : F:\SiteLiveFaceDetection\Testing live att\python 4\python\multiangle\config.yaml
+[DB] Loaded 1 persons: ['RU128']
+[INFO] Loading InsightFace buffalo_s (CPU)...
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\Users\mohammed upayathulla/.insightface\models\buffalo_s\1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\Users\mohammed upayathulla/.insightface\models\buffalo_s\2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\Users\mohammed upayathulla/.insightface\models\buffalo_s\det_500m.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\Users\mohammed upayathulla/.insightface\models\buffalo_s\genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\Users\mohammed upayathulla/.insightface\models\buffalo_s\w600k_mbf.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (480, 480)
+[INFO] Model ready.
+[INFO] Backend URL   : http://172.16.1.157:5005
+[INFO] Device ID     : CAM_001
+[INFO] -- Streams loaded (1) ---------------------------
+[INFO]   PRIMARY  : 'Main off'  ->  rtsp://admin:Admin%40123@172.16.0.150:554/ch01/1  (mode=in  thresh=0.45)
+[INFO] -----------------------------------------------------------------
+[INFO] Opening primary stream: 'Main off'  ->  rtsp://admin:Admin%40123@172.16.0.150:554/ch01/1
+[Camera] Connected via TCP: rtsp://admin:Admin@123@172.16.0.150:554/ch01/1
+[INFO] Single-stream mode.
+[RECOG] Central worker started - 1 stream(s): ['Main off']
+[INFO] Config watcher started - RTSP URL changes will apply without restart
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+C:\Users\mohammed upayathulla\AppData\Roaming\Python\Python313\site-packages\insightface\utils\face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[h264 @ 000001abb9fd8a00] error while decoding MB 34 20, bytestream -23
+[h264 @ 000001abb9fd0000] error while decoding MB 39 26, bytestream -9
+[h264 @ 000001abb9fd0480] error while decoding MB 0 7, bytestream -37
+[h264 @ 000001ab8374d3c0] error while decoding MB 30 9, bytestream -38
+[h264 @ 000001abb9fd0000] error while decoding MB 18 19, bytestream -33
+[h264 @ 000001abb9fd0480] error while decoding MB 38 25, bytestream -11
+[h264 @ 000001ab8374c180] error while decoding MB 35 28, bytestream -72
+[h264 @ 000001abb2acc780] error while decoding MB 38 26, bytestream -29
+[h264 @ 000001abb2a77800] error while decoding MB 20 20, bytestream -6
+[h264 @ 000001abb2a77cc0] error while decoding MB 21 27, bytestream -18
+[h264 @ 000001ab8374ef40] error while decoding MB 21 19, bytestream -11
+[h264 @ 000001ab8374c180] error while decoding MB 22 28, bytestream -11
+[h264 @ 000001abb2acc780] error while decoding MB 33 20, bytestream -35
+[h264 @ 000001abb9fc5240] error while decoding MB 20 24, bytestream -23
+[h264 @ 000001abb2a77cc0] error while decoding MB 35 16, bytestream -12
+[h264 @ 000001abb9fc5700] error while decoding MB 11 7, bytestream -72
+[h264 @ 000001abb9fd7c40] error while decoding MB 22 24, bytestream -15
+[h264 @ 000001abb9fd8100] error while decoding MB 17 22, bytestream -5
+[h264 @ 000001abb9fd8e80] error while decoding MB 23 29, bytestream -23
+[h264 @ 000001ab8374d3c0] error while decoding MB 19 15, bytestream -24
+[h264 @ 000001ab8374ef40] error while decoding MB 13 22, bytestream -17
+[h264 @ 000001abb9fd8100] error while decoding MB 34 12, bytestream -101
+[h264 @ 000001abb9fd8580] error while decoding MB 22 11, bytestream -9
+[h264 @ 000001abb9fd8e80] error while decoding MB 14 13, bytestream -6
+[h264 @ 000001ab8374c180] error while decoding MB 18 19, bytestream -21
+[h264 @ 000001abb2acc780] error while decoding MB 21 22, bytestream -56
+[h264 @ 000001abb2a77800] error while decoding MB 3 25, bytestream -16
+[h264 @ 000001abb9fc5700] error while decoding MB 35 11, bytestream -29
+[h264 @ 000001abb9fc5b80] error while decoding MB 1 6, bytestream -13
+[h264 @ 000001abb9fd7c40] error while decoding MB 22 16, bytestream -19
+[h264 @ 000001ab8374d3c0] error while decoding MB 7 28, bytestream -13
+[h264 @ 000001ab8374c180] error while decoding MB 22 21, bytestream -7
+[h264 @ 000001abb2acc780] error while decoding MB 19 24, bytestream -36
+[h264 @ 000001abb9fc5240] error while decoding MB 20 24, bytestream -24
+[h264 @ 000001abb2a77cc0] error while decoding MB 39 19, bytestream -22
+[h264 @ 000001ab8374ef40] error while decoding MB 17 19, bytestream -52
+[h264 @ 000001ab8374c180] cabac decode of qscale diff failed at 24 17
+[h264 @ 000001ab8374c180] error while decoding MB 24 17, bytestream -2
+[h264 @ 000001abb9fc5240] left block unavailable for requested intra4x4 mode -1
+[h264 @ 000001abb9fc5240] error while decoding MB 0 2, bytestream 8830
+[h264 @ 000001abb2a77800] error while decoding MB 21 28, bytestream -15
+[h264 @ 000001abb2a77cc0] error while decoding MB 16 20, bytestream -33
+[h264 @ 000001abb9fc5700] error while decoding MB 25 21, bytestream -15
+[h264 @ 000001abb9fd7c40] error while decoding MB 32 8, bytestream -5
+[h264 @ 000001abb9fd8100] error while decoding MB 32 12, bytestream -7
+[h264 @ 000001ab8374c180] error while decoding MB 18 15, bytestream -124
+[h264 @ 000001ab8374c180] error while decoding MB 34 11, bytestream -5
+[h264 @ 000001abb2acc780] error while decoding MB 22 26, bytestream -13
+[h264 @ 000001abb9fc5240] error while decoding MB 0 29, bytestream -18
+[h264 @ 000001abb2a77800] error while decoding MB 4 27, bytestream -6
+[h264 @ 000001abb9fc5700] error while decoding MB 13 0, bytestream -15
+[h264 @ 000001abb9fc5b80] error while decoding MB 17 20, bytestream -37
+[h264 @ 000001abb9fc5240] error while decoding MB 25 0, bytestream -8
+[h264 @ 000001abb2a77800] error while decoding MB 23 21, bytestream -17
+[h264 @ 000001abb9fc5b80] error while decoding MB 19 7, bytestream -29
+[h264 @ 000001abb9fd7c40] error while decoding MB 1 17, bytestream -25
+[h264 @ 000001abb9fd8100] error while decoding MB 13 20, bytestream -17
+[h264 @ 0000[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+01abb9fd8a00] error while decoding MB 33 10, bytestream -21
+[h264 @ 000001ab8374ef40] error while decoding MB 20 25, bytestream -69
+[h264 @ 000001ab8374c180] error while decoding MB 3 29, bytestream -23
+[h264 @ 000001abb2acc780] error while decoding MB 0 19, bytestream -23
+[h264 @ 000001abb2a77cc0] error while decoding MB 38 16, bytestream -26
+[h264 @ 000001abb9fc5b80] error while decoding MB 2 28, bytestream -16
+[h264 @ 000001ab8374ef40] error while decoding MB 25 16, bytestream -17
+[h264 @ 000001ab8374c180] error while decoding MB 39 19, bytestream -7
+[h264 @ 000001ab8374ef40] error while decoding MB 1 18, bytestream -25
+[h264 @ 000001ab8374c180] error while decoding MB 25 22, bytestream -20
+[h264 @ 000001abb9fc5240] error while decoding MB 9 9, bytestream -15
+[h264 @ 000001abb2a77800] error while decoding MB 26 26, bytestream -20
+[h264 @ 000001abb2a77cc0] error while decoding MB 27 29, bytestream -71
+[h264 @ 000001abb9fc5700] error while decoding MB 26 19, bytestream -16
+[h264 @ 000001abb9fd7c40] error while decoding MB 36 10, bytestream -21
+[h264 @ 000001abb9fd8100] cabac decode of qscale diff failed at 22 19
+[h264 @ 000001abb9fd8100] error while decoding MB 22 19, bytestream -4
+[h264 @ 000001abb9fd8580] error while decoding MB 22 22, bytestream -13
+[h264 @ 000001abb9fd8a00] error while decoding MB 25 22, bytestream -21
+[h264 @ 000001abb9fd0000] error while decoding MB 4 17, bytestream -57
+[h264 @ 000001abb9fd0480] error while decoding MB 21 0, bytestream -51
+[h264 @ 000001abb9fd8a00] error while decoding MB 23 27, bytestream -25
+[h264 @ 000001abb9fc5240] error while decoding MB 3 28, bytestream -11
+[h264 @ 000001abb2a77800] error while decoding MB 34 9, bytestream -5
+[h264 @ 000001abb9fc5b80] error while decoding MB 2 23, bytestream -9
+[h264 @ 000001ab8374d3c0] error while decoding MB 34 11, bytestream -41
+[h264 @ 000001ab8374c180] error while decoding MB 38 13, bytestream -12
+[h264 @ 000001abb2acc780] error while decoding MB 5 27, bytestream -10
+[h264 @ 000001abb2a77800] left block unavailable for requested intra4x4 mode -1
+[h264 @ 000001abb2a77800] error while decoding MB 0 17, bytestream 6988
+[h264 @ 000001abb9fc5b80] error while decoding MB 13 28, bytestream -87
+[h264 @ 000001abb9fd8100] error while decoding MB 24 21, bytestream -26
+[h264 @ 000001abb9fd8e80] error while decoding MB 4 28, bytestream -29
+[h264 @ 000001abb9fc5240] error while decoding MB 14 17, bytestream -52
+[h264 @ 000001abb2a77800] cabac decode of qscale diff failed at 17 5
+[h264 @ 000001abb2a77800] error while decoding MB 17 5, bytestream -3
+[h264 @ 000001ab8374ef40] error while decoding MB 29 13, bytestream -10
+[h264 @ 000001abb9fd8100] error while decoding MB 19 22, bytestream -15
+[h264 @ 000001abb9fd8a00] error while decoding MB 4 16, bytestream -13
+[h264 @ 000001abb9fc5700] error while decoding MB 27 13, bytestream -8
+[h264 @ 000001abb9fc5b80] error while decoding MB 30 10, bytestream -9
+[h264 @ 000001abb9fd8580] error while decoding MB 32 11, bytestream -89
+[h264 @ 000001abb9fd8e80] error while decoding MB 37 12, bytestream -14
+[h264 @ 000001ab8374d3c0] error while decoding MB 31 19, bytestream -25
+[h264 @ 000001abb2a77800] error while decoding MB 16 27, bytestream -56
+[h264 @ 000001abb2a77cc0] error while decoding MB 29 21, bytestream -8
+[h264 @ 000001abb9fd0000] error while decoding MB 5 25, bytestream -24
+[h264 @ 000001abb9fd8580] error while decoding MB 34 11, bytestream -27
+[h264 @ 000001abb9fd8e80] error while decoding MB 31 7, bytestream -9
+[h264 @ 000001abb9fd0000] error while decoding MB 14 7, bytestream -35
+[h264 @ 000001abb9fd8100] cabac decode of qscale diff failed at 24 18
+[h264 @ 000001abb9fd8100] error while decoding MB 24 18, bytestream -7
+[h264 @ 000001abb9fd8580] error while decoding MB 17 28, bytestream -25
+[h264 @ 000001abb9fd8a00] error while decoding MB 28 24, bytestream -17
+[h264 @ 000001ab8374ef40] error while decoding MB 34 21, bytestream -62
+[h264 @ 000001abb2acc780] error while decoding MB 35 9, bytestream -15
+[h264 @ 000001abb2a77800] error while decoding MB 32 24, bytestream -47
+[h264 @ 000001abb2a77cc0] error [ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+while decoding MB 32 25, bytestream -27
+[h264 @ 000001abb9fc5700] error while decoding MB 18 26, bytestream -17
+[h264 @ 000001abb9fc5b80] error while decoding MB 28 20, bytestream -32
+[h264 @ 000001abb9fd7c40] error while decoding MB 28 15, bytestream -30
+[h264 @ 000001abb9fd8e80] error while decoding MB 30 16, bytestream -25
+[h264 @ 000001abb9fd0480] error while decoding MB 29 8, bytestream -7
+[h264 @ 000001ab8374d3c0] error while decoding MB 34 23, bytestream -25
+[h264 @ 000001ab8374c180] error while decoding MB 21 10, bytestream -19
+[h264 @ 000001abb2acc780] error while decoding MB 32 7, bytestream -43
+[h264 @ 000001abb2a77800] error while decoding MB 21 22, bytestream -30
+[h264 @ 000001abb2a77cc0] error while decoding MB 34 24, bytestream -15
+[h264 @ 000001abb9fd8e80] error while decoding MB 35 9, bytestream -59
+[h264 @ 000001abb9fd0000] error while decoding MB 32 9, bytestream -33
+[h264 @ 000001abb9fd0480] left block unavailable for requested intra4x4 mode -1
+[h264 @ 000001abb9fd0480] error while decoding MB 0 8, bytestream 11976
+[h264 @ 000001ab8374c180] error while decoding MB 34 9, bytestream -17
+[h264 @ 000001abb9fc5700] error while decoding MB 28 26, bytestream -70
+[h264 @ 000001abb9fc5b80] error while decoding MB 21 24, bytestream -22
+[h264 @ 000001abb9fd8100] error while decoding MB 29 11, bytestream -41
+[h264 @ 000001abb9fd8e80] error while decoding MB 22 14, bytestream -20
+[h264 @ 000001abb9fd0480] error while decoding MB 24 24, bytestream -19
+[h264 @ 000001ab8374d3c0] error while decoding MB 20 21, bytestream -10
+[h264 @ 000001ab8374ef40] error while decoding MB 25 24, bytestream -21
+[h264 @ 000001ab8374c180] error while decoding MB 21 17, bytestream -25
+[h264 @ 000001abb9fd8e80] error while decoding MB 27 8, bytestream -36
+[h264 @ 000001abb9fc5700] error while decoding MB 11 25, bytestream -13
+[h264 @ 000001abb9fd8100] error while decoding MB 22 26, bytestream -16
+[h264 @ 000001ab8374d3c0] error while decoding MB 8 24, bytestream -67
+[h264 @ 000001ab8374c180] error while decoding MB 10 9, bytestream -5
+[h264 @ 000001abb2a77800] error while decoding MB 20 15, bytestream -24
+[h264 @ 000001abb9fc5b80] error while decoding MB 19 16, bytestream -6
+[h264 @ 000001abb9fd7c40] error while decoding MB 35 21, bytestream -29
+[h264 @ 000001abb2acc780] error while decoding MB 10 0, bytestream -43
+[h264 @ 000001ab8374c180] error while decoding MB 39 24, bytestream -17
+[h264 @ 000001abb2a77cc0] error while decoding MB 24 28, bytestream -25
+[h264 @ 000001abb9fd8580] error while decoding MB 21 28, bytestream -14
+[h264 @ 000001ab8374d3c0] error while decoding MB 22 13, bytestream -28
+[h264 @ 000001ab8374ef40] error while decoding MB 26 22, bytestream -8
+[h264 @ 000001ab8374c180] error while decoding MB 39 23, bytestream -7
+[h264 @ 000001abb9fc5240] error while decoding MB 12 8, bytestream -62
+[h264 @ 000001abb9fc5700] error while decoding MB 1 7, bytestream -25
+[h264 @ 000001abb2acc780] error while decoding MB 37 10, bytestream -11
+[h264 @ 000001abb9fc5240] error while decoding MB 20 17, bytestream -26
+[h264 @ 000001abb2a77800] error while decoding MB 17 21, bytestream -16
+[h264 @ 000001abb2a77cc0] error while decoding MB 24 22, bytestream -38
+[h264 @ 000001abb9fc5700] error while decoding MB 25 27, bytestream -31
+[h264 @ 000001abb9fc5b80] error while decoding MB 39 27, bytestream -19
+[h264 @ 000001abb9fd7c40] error while decoding MB 33 6, bytestream -14
+[h264 @ 000001abb9fc5240] error while decoding MB 21 22, bytestream -30
+[h264 @ 000001abb2a77800] error while decoding MB 26 20, bytestream -5
+[h264 @ 000001abb9fc5700] error while decoding MB 33 9, bytestream -31
+[h264 @ 000001abb9fc5b80] error while decoding MB 36 29, bytestream -16
+[h264 @ 000001abb9fd7c40] error while decoding MB 36 17, bytestream -17
+[h264 @ 000001abb9fd8100] error while decoding MB 36 5, bytestream -70
+[h264 @ 000001abb2a77cc0] error while decoding MB 32 10, bytestream -12
+[h264 @ 000001abb9fc5b80] error while decoding MB 21 28, bytestream -5
+[h264 @ 000001abb9fd8100] error while decoding MB 23 17, bytestream -12
+[h264 @ 000001ab8374d3c0] error while [ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+decoding MB 2 28, bytestream -10
+[h264 @ 000001ab8374c180] error while decoding MB 39 25, bytestream -13
+[h264 @ 000001abb2a77800] error while decoding MB 9 13, bytestream -20
+[h264 @ 000001abb2a77cc0] error while decoding MB 21 13, bytestream -26
+[h264 @ 000001abb9fc5b80] error while decoding MB 34 27, bytestream -75
+[h264 @ 000001abb2a77800] error while decoding MB 10 1, bytestream -21
+[h264 @ 000001abb2a77cc0] error while decoding MB 34 6, bytestream -11
+[h264 @ 000001abb9fc5b80] error while decoding MB 25 15, bytestream -16
+[h264 @ 000001abb9fd7c40] error while decoding MB 26 15, bytestream -38
+[h264 @ 000001abb9fd8a00] error while decoding MB 33 6, bytestream -9
+[h264 @ 000001abb9fd0000] error while decoding MB 25 22, bytestream -28
+[h264 @ 000001abb9fd0480] error while decoding MB 33 11, bytestream -29
+[h264 @ 000001ab8374ef40] error while decoding MB 39 24, bytestream -30
+[h264 @ 000001ab8374c180] error while decoding MB 26 18, bytestream -12
+[h264 @ 000001abb2acc780] error while decoding MB 10 8, bytestream -28
+[h264 @ 000001abb9fc5240] error while decoding MB 18 23, bytestream -25
+[h264 @ 000001abb9fd8a00] error while decoding MB 20 29, bytestream -39
+[h264 @ 000001abb2a77cc0] error while decoding MB 39 27, bytestream -9
+[h264 @ 000001abb9fc5700] error while decoding MB 18 18, bytestream -9
+[h264 @ 000001abb9fc5b80] error while decoding MB 8 7, bytestream -48
+[h264 @ 000001abb9fd8100] error while decoding MB 19 8, bytestream -19
+[h264 @ 000001abb9fd8a00] error while decoding MB 31 27, bytestream -14
+[h264 @ 000001abb9fd8e80] error while decoding MB 17 19, bytestream -19
+[h264 @ 000001abb2a77cc0] error while decoding MB 35 9, bytestream -17
+[h264 @ 000001abb9fc5700] error while decoding MB 12 10, bytestream -7
+[h264 @ 000001abb9fc5b80] error while decoding MB 17 21, bytestream -19
+[h264 @ 000001abb9fd8100] error while decoding MB 24 21, bytestream -5
+[h264 @ 000001abb9fd8580] error while decoding MB 8 14, bytestream -12
+[h264 @ 000001abb9fd8a00] error while decoding MB 19 27, bytestream -17
+[h264 @ 000001abb9fd0000] error while decoding MB 19 28, bytestream -21
+[h264 @ 000001abb9fd0480] error while decoding MB 25 20, bytestream -27
+[h264 @ 000001abb9fc5b80] error while decoding MB 34 4, bytestream -7
+[h264 @ 000001abb9fd7c40] error while decoding MB 18 23, bytestream -37
+[h264 @ 000001abb9fd8100] error while decoding MB 20 28, bytestream -41
+[h264 @ 000001abb9fd8580] error while decoding MB 26 23, bytestream -37
+[h264 @ 000001abb9fd8a00] error while decoding MB 20 21, bytestream -9
+[h264 @ 000001abb9fd0480] error while decoding MB 27 20, bytestream -5
+[h264 @ 000001ab8374d3c0] error while decoding MB 12 4, bytestream -31
+[h264 @ 000001abb9fd8580] error while decoding MB 2 15, bytestream -38
+[h264 @ 000001abb2a77800] error while decoding MB 31 26, bytestream -24
+[h264 @ 000001abb2a77cc0] error while decoding MB 18 23, bytestream -14
+[h264 @ 000001abb2a77cc0] error while decoding MB 37 9, bytestream -43
+[h264 @ 000001abb9fd0480] error while decoding MB 9 29, bytestream -56
+[h264 @ 000001ab8374d3c0] error while decoding MB 20 24, bytestream -17
+[h264 @ 000001abb9fd7c40] error while decoding MB 27 9, bytestream -9
+[h264 @ 000001abb9fd8580] error while decoding MB 21 29, bytestream -23
+[h264 @ 000001abb9fd8e80] error while decoding MB 19 8, bytestream -9
+[h264 @ 000001abb2a77800] error while decoding MB 9 2, bytestream -58
+[h264 @ 000001abb2a77cc0] error while decoding MB 27 7, bytestream -39
+[h264 @ 000001abb9fc5b80] error while decoding MB 36 15, bytestream -8
+[h264 @ 000001abb9fd8e80] error while decoding MB 20 19, bytestream -15
+[h264 @ 000001abb9fd0000] error while decoding MB 21 21, bytestream -11
+[h264 @ 000001abb9fd0480] error while decoding MB 21 19, bytestream -16
+[h264 @ 000001ab8374ef40] error while decoding MB 33 6, bytestream -27
+[h264 @ 000001abb2acc780] error while decoding MB 25 17, bytestream -31
+[h264 @ 000001abb2a77800] error while decoding MB 0 24, bytestream -5
+[h264 @ 000001abb9fc5700] error while decoding MB 12 9, bytestream -9
+[h264 @ 000001abb9fd7c40] error while decoding MB 35 9, bytestream [ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[BBOX] POST error: HTTPConnectionPool(host='172.16.1.157', port=5005): Read timed out. (read timeout=1)
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[ROI:Main off] Loaded: [4, 6, 632, 355]
+[Camera] Read exception on rtsp://admin:Admin%40123@172.16.0.150:554/ch01/1: Unknown C++ exception from OpenCV code
+[INFO] Stopped.
+-8
+[h264 @ 000001abb9fd8580] error while decoding MB 36 16, bytestream -15
+[h264 @ 000001abb9fd8a00] error while decoding MB 23 23, bytestream -36
+[h264 @ 000001abb9fd8e80] error while decoding MB 19 18, bytestream -16
+[h264 @ 000001abb9fd0480] error while decoding MB 2 15, bytestream -16
+[h264 @ 000001ab8374d3c0] cabac decode of qscale diff failed at 14 7
+[h264 @ 000001ab8374d3c0] error while decoding MB 14 7, bytestream -7
+[h264 @ 000001ab8374ef40] error while decoding MB 25 16, bytestream -31
+[h264 @ 000001ab8374c180] error while decoding MB 27 21, bytestream -21
+[h264 @ 000001abb9fd8580] error while decoding MB 36 16, bytestream -25
+[h264 @ 000001abb9fd8e80] error while decoding MB 0 6, bytestream -55
+[h264 @ 000001abb9fd0480] error while decoding MB 36 29, bytestream -12
+[h264 @ 000001ab8374d3c0] error while decoding MB 22 24, bytestream -19
+[h264 @ 000001ab8374ef40] error while decoding MB 26 17, bytestream -22
+[h264 @ 000001abb2acc780] error while decoding MB 33 11, bytestream -23
+[h264 @ 000001abb9fd8580] error while decoding MB 19 20, bytestream -16
+[h264 @ 000001abb9fd8a00] error while decoding MB 30 9, bytestream -5
+[h264 @ 000001abb9fd8e80] error while decoding MB 20 25, bytestream -10
+[h264 @ 000001abb9fd8100] error while decoding MB 32 6, bytestream -19
+[h264 @ 000001abb9fd8580] error while decoding MB 26 19, bytestream -5
+[h264 @ 000001abb2acc780] error while decoding MB 6 25, bytestream -52
+[h264 @ 000001abb2a77800] error while decoding MB 26 11, bytestream -18
+[h264 @ 000001abb2a77cc0] error while decoding MB 25 20, bytestream -43
+[h264 @ 000001abb9fc5b80] error while decoding MB 33 29, bytestream -17
+[h264 @ 000001abb9fd8580] error while decoding MB 11 28, bytestream -11
+[h264 @ 000001abb9fd7c40] error while decoding MB 8 9, bytestream -19
+[h264 @ 000001abb9fd8100] error while decoding MB 31 9, bytestream -19
+[h264 @ 000001abb9fd8580] error while decoding MB 31 19, bytestream -20
+[h264 @ 000001ab8374c180] error while decoding MB 34 7, bytestream -25
+[h264 @ 000001abb2acc780] cabac decode of qscale diff failed at 6 28
+[h264 @ 000001abb2acc780] error while decoding MB 6 28, bytestream -5
+[h264 @ 000001abb2a77800] error while decoding MB 37 16, bytestream -43
+[h264 @ 000001abb2a77cc0] error while decoding MB 18 22, bytestream -13
+[h264 @ 000001abb9fc5b80] error while decoding MB 15 1, bytestream -33
+[h264 @ 000001abb9fd7c40] error while decoding MB 18 22, bytestream -29
+[h264 @ 000001abb9fd8580] error while decoding MB 32 13, bytestream -12
+[h264 @ 000001abb9fd8a00] error while decoding MB 1 19, bytestream -5

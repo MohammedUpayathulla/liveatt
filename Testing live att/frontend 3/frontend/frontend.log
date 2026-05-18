@@ -1,0 +1,12 @@
+
+> attendance-frontend@1.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m511[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttps://localhost:[1m3000[22m/LiveAttendance/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttps://172.16.1.157:[1m3000[22m/LiveAttendance/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m10:34:06 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/WebRTCStream.jsx, /src/index.css[22m
+[2m10:34:07 am[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/FullScreenDetection.jsx, /src/index.css[22m
